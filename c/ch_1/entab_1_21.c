@@ -10,12 +10,12 @@ int main()
     int length, space_nums;
     char c[MAXIMUM], rc[MAXIMUM];
     
-    length = get_input(c, length);
+    length = get_input(c, MAXIMUM);
     
-    space_nums = 4;
+    space_nums = 2;
     // entab
     entab(c, space_nums, rc);
-    printf("\n%s",c);
+    // printf("\n%s",c);
 	printf("\n%s\n",rc);
 }
 
@@ -28,7 +28,7 @@ int get_input(char c[], int length)
     for(i=0;(ch=getchar())!=EOF && i < length; i++)
     {   
 		c[i] = ch;
-		printf("%c",ch);
+		// printf("%c",ch);
 	}
 	printf("\n%s",c);
     
